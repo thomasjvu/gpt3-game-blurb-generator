@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap");
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 .root {
@@ -17,12 +17,23 @@ body {
     overflow: auto;
     padding: 0px;
     position: relative;
+    background: url("../assets/snail-village.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+
 .container {
+    background-color: rgba(7, 24, 33, 0.99);
+    border-radius: 10px;
+    border: 1px solid white;
     display: flex;
     place-content: center flex-start;
     align-items: center;
+    justify-content: center;
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 10px;
@@ -33,14 +44,16 @@ body {
     position: relative;
     width: auto;
     gap: 64px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.header {    
+.header {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #FFF
+    color: #fff;
 }
 
 .header-title {
@@ -52,7 +65,7 @@ body {
     width: 100%;
     font-weight: 700;
     font-size: 72px;
-    letter-spacing: -4px;
+    letter-spacing: -1px;
     line-height: 1.2em;
     text-align: center;
     margin: 0;
@@ -64,6 +77,14 @@ body {
     font-weight: 400;
     line-height: 1.4em;
     color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    font-family: "Cascadia Code", monospace;
+}
+
+.header-example {
+    display: block;
+    font-style: italic;
+    font-family: "Cascadia Code", monospace;
 }
 
 .prompt-container {
@@ -97,7 +118,7 @@ body {
     overflow: hidden;
     padding: 20px;
     position: relative;
-    width: 610px;
+    width: 650px;
     max-width: 1200px;
     will-change: transform;
     overflow: auto;
@@ -114,14 +135,12 @@ body {
 }
 
 textarea {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
 }
-
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color: rgba(255, 255, 255, 0.75);
 }
-
 
 .prompt-buttons {
     display: flex;
@@ -166,13 +185,13 @@ textarea {
 }
 
 .or p {
-    color: rgba(255, 255, 255, 0.25)
+    color: rgba(255, 255, 255, 0.25);
 }
 
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background: rgb(55, 148, 110);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -186,6 +205,7 @@ textarea {
     width: min-content;
     will-change: transform;
     cursor: pointer;
+    font-family: "Cascadia Code", monospace;
 }
 
 .generate {
@@ -261,7 +281,7 @@ textarea {
 }
 
 .grow {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {
@@ -321,7 +341,7 @@ textarea {
 }
 
 .output-content p {
-    text-align: center;
+    text-align: justify;
     white-space: pre-line;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -372,7 +392,8 @@ textarea {
         text-align: center;
     }
 
-    .key-stroke, .or {
+    .key-stroke,
+    .or {
         display: none;
     }
 
@@ -390,15 +411,13 @@ textarea {
     }
 }
 
-
-
- /* Loading ring animation */
+/* Loading ring animation */
 .loader {
     width: 18px;
     height: 18px;
     border-radius: 50%;
     display: inline-block;
-    border-top: 2px solid #FFF;
+    border-top: 2px solid #fff;
     border-right: 2px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
@@ -412,4 +431,9 @@ textarea {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* Blur */
+.blur {
+    backdrop-filter: blur(15px);
 }
