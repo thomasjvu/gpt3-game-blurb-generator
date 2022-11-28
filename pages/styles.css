@@ -17,7 +17,7 @@ body {
     overflow: auto;
     padding: 0px;
     position: relative;
-    background: url("../assets/snail-village.png");
+    background: url("../public/snail-village.png");
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
