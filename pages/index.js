@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import ultimaLogo from "../assets/ultima-logo.png";
+import ultimaLogo from "../assets/ultima-logo-full.png";
 import React from "react";
 import { useState } from "react";
 
@@ -102,7 +102,7 @@ const Home = () => {
                 >
                     <div className="badge">
                         <Image src={ultimaLogo} alt="Ultima.gg logo" />
-                        <p>Built by Ultima.gg</p>
+                        <p>By Ultima</p>
                     </div>
                 </a>
             </div>
