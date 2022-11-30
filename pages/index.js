@@ -93,22 +93,12 @@ const Home = () => {
                         </div>
                     )}
                 </div>
-                <a
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="badge">
-                        <p>Coming Soon to the Chrome Webstore</p>
-                    </div>
+                <a href="#" target="_blank" rel="noreferrer" className="chrome">
+                    Coming Soon to the Chrome Webstore
                 </a>
             </div>
             <div className="badge-container grow">
-                <a
-                    href="https://ultima.gg/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
+                <a href="https://ultima.gg/" target="_blank" rel="noreferrer">
                     <div className="badge">
                         <Image src={ultimaLogo} alt="Ultima.gg logo" />
                         <p>By Ultima</p>

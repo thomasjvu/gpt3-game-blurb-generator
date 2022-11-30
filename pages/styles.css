@@ -435,6 +435,11 @@ textarea {
 }
 
 /* Blur */
-.blur {
-    backdrop-filter: blur(15px);
+/* .blur { */
+/*     backdrop-filter: blur(15px); */
+/* } */
+
+/* Chrome */
+.chrome {
+    color: #37946e;
 }
